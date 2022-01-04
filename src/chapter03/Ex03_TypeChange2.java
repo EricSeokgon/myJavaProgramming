@@ -1,6 +1,6 @@
 package chapter03;
 
-public class Ex02_TypeChange2 {
+public class Ex03_TypeChange2 {
     public static void main(String[] args) {
         int num1 = 2147483647;
         //int num2 = 2147483648;

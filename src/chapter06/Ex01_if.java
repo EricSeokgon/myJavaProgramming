@@ -14,5 +14,6 @@ public class Ex01_if {
 
         if (num < 50)
             System.out.println(num);
+            System.out.println("num 변수의 길이 50보다 작습니다.");
     }
 }

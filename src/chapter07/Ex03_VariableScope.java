@@ -9,11 +9,11 @@ public class Ex03_VariableScope {
             num1++;
             System.out.println(num1);
         }
-        {
-            int num2 = 33;
-            num2++;
-            System.out.println(num2);
-        }
+
+        int num2 = 33;
+        num2++;
+        System.out.println(num2);
+
         for (int i = 0; i < 3; i++) {
             System.out.println(i);
         }

@@ -61,6 +61,14 @@ public class MyCalculator {
         System.out.println(num1 + " + " + num2 + " = " + result);
     }
 
+    public static boolean checkNum(char ch) {
+        if (ch >= '0' && ch <= '9') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     private static void showMenu() {
         System.out.println("메뉴를 선택하세요.");
         System.out.println("1.더하기");

@@ -8,14 +8,18 @@ public class MyCalculator {
         while (true) {
             showMenu();
 
-            int num = sc.nextInt();
+            //int num = sc.nextInt();
+            char myChar = sc.nextLine().charAt(0);
+            if (!checkNum(myChar)) {
+                System.out.println("메뉴를 잘못 선택했습니다.");
+                continue;
+            }
+            int num = myChar - '0';
+            System.out.println(num);
             if (num == 0) {
                 break;
             } else {
-                if (num > 4) {
-                    System.out.println("메뉴를 잘못 선택했습니다.");
-                    continue;
-                }
+
 
                 System.out.println("첫 번째 숫자 : ");
                 int num1 = sc.nextInt();
@@ -33,8 +37,8 @@ public class MyCalculator {
                     divideNum(num1, num2);
                 }
             }
+            System.out.println("계산기를 종료합니다.");
         }
-        System.out.println("계산기를 종료합니다.");
 
     }
 

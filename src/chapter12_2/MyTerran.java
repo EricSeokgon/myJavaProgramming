@@ -1,30 +1,29 @@
-package chapter12;
+package chapter12_2;
 
 class Unit {
     String name;
     int hp;
 
-    void printUnit() {
-        System.out.println("이름 : " + name);
-        System.out.println("HP : " + hp);
+    void doMove() {
+        System.out.println("이동속도 10으로 이동");
     }
 }
 
 class Marine extends Unit {
     int attack;
 
-    void printMarine() {
-        printUnit();
-        System.out.println("공격력 : " + attack);
+    void doMove() {
+        super.doMove();
+        System.out.println(attack + " 공격");
     }
 }
 
 class Medic extends Unit {
     int heal;
 
-    void printMedic() {
-        printUnit();
-        System.out.println("치유량 : " + heal);
+    void doMove() {
+        System.out.println("이동속도 8으로 이동");
+        System.out.println(heal + " 치유");
     }
 }
 
@@ -40,8 +39,9 @@ public class MyTerran {
         unit2.hp = 120;
         unit2.heal = 10;
 
-        unit1.printMarine();
+        unit1.doMove();
         System.out.println();
-        unit2.printMedic();
+        unit2.doMove();
+
     }
 }

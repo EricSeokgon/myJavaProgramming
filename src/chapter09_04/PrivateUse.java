@@ -35,7 +35,7 @@ public class PrivateUse {
         student1.age = -20;
         System.out.printf("%s의 나이는 %d살입니다.\n", student1.name, student1.age);
 
-        Student2 student2 = new Student2();
+        Student2 student2 = new Student2("전우치", 20);
         student2.name = "손오공";
         //student2.age = -20;
         student2.setAge(-10);

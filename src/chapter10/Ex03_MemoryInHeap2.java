@@ -1,7 +1,7 @@
 package chapter10;
 
 
-public class Ex02_MemoryInHeap2 {
+public class Ex03_MemoryInHeap2 {
     public static void main(String[] args) {
         Book book1 = new Book();
         book1.num = 10;

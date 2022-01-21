@@ -13,17 +13,17 @@ public class Ex14_ArraySort {
         Arrays.sort(arr3);
 
         for (int n : arr1) {
-            System.out.print(n + "tn");
+            System.out.print(n + "\t");
         }
         System.out.println();
 
         for (double d : arr2) {
-            System.out.print(d + "tn");
+            System.out.print(d + "\t");
         }
         System.out.println();
 
         for (String s : arr3) {
-            System.out.print(s + "tn");
+            System.out.print(s + "\t");
         }
         System.out.println();
     }

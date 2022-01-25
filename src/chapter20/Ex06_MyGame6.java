@@ -40,8 +40,8 @@ public class Ex06_MyGame6 {
 
 
         //게임 종족에서 유닛을 가져오기
-        Npc5 hUnit = human.get();
-        Tank5 mUnit = machine.get();
+        Npc6 hUnit = human.get();
+        Tank6 mUnit = machine.get();
 
         System.out.println(human.get());
         System.out.println(machine.get());

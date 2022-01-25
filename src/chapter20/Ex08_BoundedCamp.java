@@ -1,5 +1,7 @@
 package chapter20;
 
+import javax.swing.*;
+
 class Camp8<T extends Number> {
     private T ob;
 
@@ -14,6 +16,13 @@ class Camp8<T extends Number> {
 
 public class Ex08_BoundedCamp {
     public static void main(String[] args) {
+        Camp8<Integer> iBox = new Camp8<>();
+        iBox.set(24);
 
+        Camp8<Double> dBox = new Camp8<>();
+        dBox.set(4.98);
+
+        System.out.println(iBox.get());
+        System.out.println(dBox.get());
     }
 }

@@ -1,6 +1,7 @@
 package chapter21;
 
 import java.util.HashSet;
+import java.util.Objects;
 
 class Student {
     private String name;
@@ -17,13 +18,19 @@ class Student {
     }
 
 
-    public int hashCode() {
+/*    public int hashCode() {
         int num = age % 3;
+        System.out.println(num);
+        return num;
+    }*/
+
+    @Override
+    public int hashCode() {
+        int num = Objects.hash(name, age);
         System.out.println(num);
         return num;
     }
 
-    @Override
     public boolean equals(Object obj) {
         System.out.println("비교를 합니다.");
         if (age == ((Student) obj).age) {

@@ -13,7 +13,7 @@ public class Ex04_Convert {
 
 
         //ArrayList<E> 객체의 순환
-        for (Iterator<String> itr = list.iterator(); itr.hasNext() >) {
+        for (Iterator<String> itr = list.iterator(); itr.hasNext(); ) {
             System.out.print(itr.next() + "\t");
         }
         System.out.println();

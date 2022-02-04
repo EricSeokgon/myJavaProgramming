@@ -9,7 +9,7 @@ public class Ex02_FileWrite2 {
         OutputStream out = null;
 
         try {
-            out = new FileOutputStream("data.txt")
+            out = new FileOutputStream("data.txt");
             out.write(65);
         } catch (IOException e) {
 

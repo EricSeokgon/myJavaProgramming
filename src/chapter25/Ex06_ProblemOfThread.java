@@ -22,8 +22,8 @@ public class Ex06_ProblemOfThread {
         t1.start();
         t2.start();
 
-        t1.join();
-        t2.join();
+        t1.join(); //t1이 참조하는 스레드의 종료를 기다림
+        t2.join(); //t2이 참조하는 스레드의 종료를 기다림
 
         System.out.println(money);
 
